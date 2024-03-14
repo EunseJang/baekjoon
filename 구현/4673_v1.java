@@ -1,33 +1,31 @@
 package 구현;
 
-class _4673_v1 {
-  static int sum;
-  static int self[];
-
+class _4673_v1 { 
+  static boolean check[];
   public static void main(String[] args) {
-    self = new int[10001];
+     check = new boolean[10001];
     
-    for(int i=1; i<=10000; i++) {
-      int jari = String.valueOf(i).length() - 1;
-      d(jari, i);
+    for(int n=1; n<10001; n++) {
+      int digit = String.valueOf(n).length();
+      result(digit, n);
     }
     
-    for(int i=1; i<=10000; i++) {
-      if(self[i] == 0) {
+    for(int i=1; i<10001; i++) {
+      if(!check[i]) {
         System.out.println(i);
       }
     }
   }
 
-  static void d(int jari, int num) {
-    sum = num;
-    for(int i = jari; i>=0; i--) {
+  static void result(int digit, int num) {
+    int sum = num;
+    for(int i = digit-1; i>=0; i--) {
       sum = sum + num/(int)Math.pow(10,i);
       num = num % (int)Math.pow(10,i);
     }
     
-    if(sum <= 10000) {
-      self[sum] = 1;
+    if(sum < 10001) {
+      check[sum] = true;
     }
   }
 }
