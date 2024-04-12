@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-class _7576_st {
+class _7576 {
   static int N, M;
   static int box[][];
 
