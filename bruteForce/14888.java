@@ -1,4 +1,4 @@
-package 브루트포스;
+package bruteForce;
 
 import java.io.BufferedReader;
 import java.io.IOException;

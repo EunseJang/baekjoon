@@ -1,4 +1,4 @@
-package 그래프;
+package graph;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,8 +17,8 @@ class _1260 {
     int M = sc.nextInt();
     int V = sc.nextInt();
 
-    A = new ArrayList[N+1];
-    for (int i=1; i<=N; i++) {
+    A = new ArrayList[N];
+    for (int i=0; i<N; i++) {
       A[i] = new ArrayList<Integer>();
     }
 

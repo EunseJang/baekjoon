@@ -1,4 +1,4 @@
-package 구현;
+package implementation;
 
 class _4673_v2 {
   public static void main(String[] args) {
