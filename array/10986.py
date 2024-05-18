@@ -6,11 +6,9 @@ N, M = map(int, input().split())
 arr = list(map(int, input().split()))
 arrSum = [0] * (N+1)
 
-# 누적합 배열
 for i in range(1, N+1):
     arrSum[i] = arrSum[i-1] + arr[i-1]
 
-# 변경된 누적합 배열
 for i in range(1, N+1):
     arrSum[i] = arrSum[i] % M
 
